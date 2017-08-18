@@ -1,12 +1,9 @@
 import requests
 
 def view_feeds():
-	
-	return requests.get('http://34.207.10.230:3000/posts')
+	print( requests.get(_url('/posts')).json())
 
-def view_specific_feed(posts_id):
-	
-	return requests.get('/http://34.207.10.230:3000/posts/{:id}' .format(posts_id))
+
 	
 
 def post_feed():
