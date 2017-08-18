@@ -38,3 +38,40 @@ def display_menu():
     print("3. Comment On News Feed")
     print("")
 
+
+    
+    def get_menu_choice():
+    print("")
+    option_valid = False
+    while not option_valid:
+        try:
+            choice = int(input("Option Selected : "))
+            if 0 <= choice <= 4:
+                option_valid = True
+            else:
+                print ("Please Enter a valid option")
+        except ValueError:
+            print ("Please Enter a valid option")
+        return choice
+
+
+def main():
+
+    no_exit = True
+    while no_exit:
+        display_menu()
+        option = get_menu_choice()
+        print ("")
+        if option == 1:
+            view_feed()
+        elif option == 2:
+            post_news()
+        elif option == 3:
+            comment()
+            print("")
+        elif option == 0:
+            no_exit = False
+            print ("Thank you")
+            print ("")
+
+if __name__ == '__main__':
