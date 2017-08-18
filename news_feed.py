@@ -1,5 +1,9 @@
 import requests
 
+def url(path):
+    return 'http://34.207.10.230:3000' + path
+
+
 def view_feeds():
 	pass
 
