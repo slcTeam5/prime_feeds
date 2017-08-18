@@ -26,3 +26,15 @@ def comment():
         "postId": postId
     })
 
+def display_menu():
+    print("")
+    print("----------------------------------------")
+    print("Welcome To The News Feed App ! :")
+    print("")
+    print("Select An Option")
+    print("")
+    print("1. View News Feeds")
+    print("2. Post A News Feed")
+    print("3. Comment On News Feed")
+    print("")
+
