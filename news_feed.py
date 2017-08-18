@@ -1,7 +1,7 @@
 import requests
 
 def view_feeds():
-	print( requests.get(_url('/posts')).json())
+	print( requests.get('http://34.207.10.230:3000/posts').json())
 
 
 	
